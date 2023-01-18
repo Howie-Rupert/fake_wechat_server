@@ -17,6 +17,7 @@ if($pass == $res[0]['password']){
     $arr['msg'] = '登陆成功';
     $arr['nickname'] = $res[0]['nickname'];
     $arr['usericon'] = $res[0]['usericon'];
+    $arr['userid'] = $res[0]['id'];
     exit(json_encode($arr));
 }else{
     exit(json_encode($res));
